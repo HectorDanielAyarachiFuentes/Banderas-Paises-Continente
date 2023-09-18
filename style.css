@@ -62,6 +62,9 @@
     padding: 1rem;
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
+    font-size: 20px;
+    font-weight: bold;
+
 }
 
 /* Reglas de medios para hacerlo responsive */
@@ -80,6 +83,8 @@
     .card {
         width: 100%; /* Ajusta el ancho de las tarjetas en pantallas pequeñas */
     }
+/* Estilos para el cuerpo de la tarjeta */
+
 }
 /* Estilos para centrar el título en el header */
 header {
