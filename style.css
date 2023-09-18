@@ -36,6 +36,8 @@
     background-color: rgb(43, 128, 128);
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
+    font-size: 20px;
+
 }
 
 .cardH h3 {
@@ -67,17 +69,6 @@
 
 }
 
-/* Reglas de medios para hacerlo responsive */
-@media screen and (max-width: 768px) {
-    .card {
-        width: calc(50% - 1rem); /* Ajusta el ancho de las tarjetas en pantallas medianas */
-    }
-    
-    .container {
-        margin: 0;
-        padding: 1rem;
-    }
-}
 /* Estilos para pantallas con una resolución de 320 píxeles o menos */
 @media screen and (max-width: 320px) {
     header {
@@ -94,6 +85,17 @@
 
     #search-button {
         width: 80%;
+    }
+}
+/* Reglas de medios para hacerlo responsive */
+@media screen and (max-width: 768px) {
+    .card {
+        width: calc(50% - 1rem); /* Ajusta el ancho de las tarjetas en pantallas medianas */
+    }
+    
+    .container {
+        margin: 0;
+        padding: 1rem;
     }
 }
 
