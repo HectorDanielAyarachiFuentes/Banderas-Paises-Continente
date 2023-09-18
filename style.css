@@ -87,12 +87,48 @@
         width: 80%;
     }
 }
+/* Estilos para la estructura general en pantallas pequeñas */
+@media screen and (max-width: 320px) {
+    body {
+        overflow-x: hidden; /* Evita el desplazamiento horizontal */
+    }
+
+    .container {
+        flex-direction: column; /* Cambia a dirección de columna para apilar las tarjetas */
+        align-items: center; /* Centra el contenido en el eje X */
+        gap: 0.5rem; /* Reduce el espacio entre tarjetas */
+        padding: 0.5rem; /* Añade un espacio alrededor del contenedor */
+    }
+
+    .card {
+        width: 100%; /* Utiliza el ancho completo de la pantalla en pantallas pequeñas */
+        margin: 0; /* Elimina el margen para evitar desbordamientos */
+    }
+
+    .cardH {
+        height: 3rem; /* Reduce la altura de la cabecera */
+        font-size: 16px; /* Reduce el tamaño de fuente de la cabecera */
+    }
+
+    .cardB {
+        height: auto; /* Permite que la altura se ajuste automáticamente según el contenido */
+        padding: 1rem; /* Añade espacio interno */
+    }
+
+    .cardF {
+        height: 2rem;
+        font-size: 16px; /* Reduce el tamaño de fuente del pie de la tarjeta */
+    }
+}
+
+
+
 /* Reglas de medios para hacerlo responsive */
 @media screen and (max-width: 768px) {
     .card {
         width: calc(50% - 1rem); /* Ajusta el ancho de las tarjetas en pantallas medianas */
     }
-    
+
     .container {
         margin: 0;
         padding: 1rem;
